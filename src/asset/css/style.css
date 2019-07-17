@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 50px;
+}
+
+.todo-list {
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 40px;
+    text-align: left;
+    padding: 10px;
+    background: blueviolet;
+}
+
+input {
+    border-radius: 0;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 40px;
+    outline: none;
+    opacity: 0.2;
+    border: 1px solid purple;
+    width: 60%;
+}
+
+input:focus {
+    border: 1px solid rebeccapurple;
+    opacity: 1;
+    background: #ddd;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    background: #6666ff;
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 30%;
+    background-color: #0066FF;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+span {
+    display: inline-block;
+}
+
+.item {
+    width: 80%;
+    word-wrap: break-word;
+    text-transform: capitalize;
+}
+
+.icon {
+    width: 20%;
+}
+
+ul li {
+    background-color: rgba(255,255,255,.5);
+    font-size: 16px;
+    padding: 20px;
+    display: block;
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+ul li:hover {
+    background: #ddd;
+    transition: background-color .2s ease-out;
+}
