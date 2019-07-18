@@ -20,7 +20,7 @@ class Todo extends React.Component {
     e.preventDefault();
     if (this.state.item && this.state.item.length >= 1) {
       this.setState({
-        items: [this.state.item, ...this.state.items],
+        items: [...this.state.items, this.state.item],
         item: ''
       })
     }
