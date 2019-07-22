@@ -65,7 +65,8 @@ class Todo extends React.Component {
     return(
       <div className="todo-list">
         <p>Todo List</p>
-        <input type="text" placeholder="Search" onChange={this.checkInput} style={{width: 80 + '%'}}></input>
+        <form>
+          <input type="text" placeholder="Search" onChange={this.checkInput} style={{width: 80 + '%'}}></input>
           <ul>
           {this.state.search.map(
             (value,index) => {
@@ -74,16 +75,6 @@ class Todo extends React.Component {
             
           })
         }
-        <form>
-          {/* <input type="text" placeholder="Search" onChange={this.checkInput} style={{width: 80 + '%'}}></input>
-          <ul>
-          {this.state.search.map(
-            (value,index) => {
-              return <TodoList value ={value} index={index}/>
-            //return (<li key={index}><span className="item">{value}</span></li>
-            
-          })
-        } */}
         </ul>
         </form>
         <form onSubmit={this.addItem}>
